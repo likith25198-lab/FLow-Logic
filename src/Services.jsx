@@ -8,37 +8,37 @@ const Services = () => {
     { 
       id: "", 
       title: "Advanced Water Treatment", 
-      img: "public/adv.jpg", // Replace with your image path
+      img: "adv.jpg", // Replace with your image path
       desc: "Clean water isn’t optional—it’s essential. We design and deliver water treatment systems that make water safe for everyday use across industrial, commercial, and residential sectors." 
     },
     { 
       id: "02", 
       title: "Energy-Efficient Hot Water", 
-      img: "public/hot.jpg", 
+      img: "hot.jpg", 
       desc: "In partnership with Energen, we provide smart hybrid systems that reduce energy usage while ensuring a steady, reliable hot water supply—saving costs without compromising comfort." 
     },
     { 
       id: "03", 
       title: "Integrated Distribution", 
-      img: "public/int.png", 
+      img: "int.png", 
       desc: "We build distribution systems that work seamlessly in the background, ensuring uninterrupted water supply at the right pressure and quality across large-scale projects." 
     },
     { 
       id: "04", 
       title: "Fire Protection Systems", 
-      img: "public/fire.jpg", 
+      img: "fire.jpg", 
       desc: "Our fire pump solutions are designed for immediate response and absolute reliability, supporting sprinkler systems to protect lives and property when it matters most." 
     },
     { 
       id: "05", 
       title: "Sewage & Effluent Treatment", 
-      img: "public/sew.jpg", 
+      img: "sew.jpg", 
       desc: "Using advanced Daiki Axis (Japan) technology, we treat and recycle wastewater, making it safe for reuse or discharge while supporting environmental responsibility." 
     },
     { 
       id: "06", 
       title: "HVAC Pumping & Control", 
-      img: "public/HVAC.jpg", 
+      img: "HVAC.jpg", 
       desc: "Our HVAC systems ensure smooth circulation of chilled water to maintain optimal building temperatures efficiently, adapting to demand without unnecessary energy use." 
     }
   ];
