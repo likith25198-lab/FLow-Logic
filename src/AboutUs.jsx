@@ -41,7 +41,7 @@ const AboutUs = () => {
     <div className="image-overlay"></div>
     {/* Replace your placeholder text with this: */}
     <img 
-      src="public/serve.png" 
+      src="serve.png" 
       alt="Flowlogic Solutions Water Management" 
       className="about-img" 
     />
