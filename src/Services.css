@@ -1,0 +1,164 @@
+.services-section {
+  padding: 50px 5%;
+  background: #ffffff;
+}
+
+.services-main-title {
+  font-family: var(--serif-font);
+  font-size: 3rem;
+  color: rgb(15, 0, 97);
+  margin-top: 10px;
+}
+
+.accordion-wrapper {
+  display: flex;
+  width: 100%;
+  height: 450px; /* Slightly taller to accommodate longer text */
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.service-blade {
+  position: relative;
+  flex: 0.6;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.service-blade.active {
+  flex: 4; /* More expansion for readability */
+}
+
+.blade-bg-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transition: transform 1.2s ease;
+}
+
+.service-blade.active .blade-bg-img {
+  transform: scale(1.05);
+}
+
+/* Update these specific sections in Services.css */
+
+.blade-overlay {
+  position: absolute;
+  inset: 0;
+  /* Ensure this is at z-index 2 */
+  background: linear-gradient(to right, rgba(3, 4, 94, 0.9) 0%, rgba(3, 4, 94, 0.4) 100%);
+  z-index: 2; 
+  transition: 0.5s;
+}
+
+.blade-vertical-title {
+  position: absolute;
+  /* Center it horizontally in the narrow blade */
+  bottom: 180px;
+  left: 50%;
+  /* CRITICAL: Must be higher than z-index 2 */
+  z-index: 5; 
+  
+  /* Use flex-direction column so the number is above the text when rotated */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 10px;
+  
+  /* Rotation logic */
+  transform: translateX(-50%) rotate(-90deg);
+  transform-origin: center;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Allows clicks to pass through to the blade */
+}
+
+.blade-label {
+  color: #ffffff !important; /* Force white color */
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Adds readability */
+}
+
+.blade-number {
+  color: #00b4d8; /* Your electric blue */
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.service-blade.active .blade-vertical-title {
+  opacity: 0;
+}
+
+/* Expanded Text Styling */
+.blade-content {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  z-index: 4;
+  opacity: 0;
+  max-width: 550px;
+  transition: all 0.5s 0.4s;
+}
+
+.service-blade.active .blade-content {
+  opacity: 1;
+}
+
+.content-number {
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(0, 180, 216, 0.15);
+  line-height: 1;
+}
+
+.content-title {
+  color: white!important;
+  font-weight: 700 !important;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: var(--serif-font);
+}
+
+.content-desc {
+  color: #f0f0f0;
+  line-height: 1.8;
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+}
+
+.service-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--electric-blue);
+  color: var(--electric-blue);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  border-radius: 50px;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 900px) {
+  .accordion-wrapper {
+    flex-direction: column;
+    height: 1400px;
+  }
+  .service-blade.active {
+    flex: 5;
+  }
+  .blade-vertical-title {
+    transform: none;
+    left: 30px;
+    bottom: 50px;
+  }
+}

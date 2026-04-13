@@ -1,0 +1,94 @@
+.git-section {
+  padding: 40px 5%; /* Tight vertical padding */
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 1px solid #1a1a1a;
+}
+
+.git-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.git-header {
+  text-align: left; /* Shifted to side-aligned for space efficiency */
+  margin-bottom: 25px;
+}
+
+.git-tag {
+  color: #00b4d8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.git-title {
+  font-size: 1.5rem; /* Compact title */
+  margin-top: 5px;
+}
+
+/* --- Slim Card Grid --- */
+.git-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Forces three columns on desktop */
+  gap: 15px;
+}
+
+.git-card {
+  background: #050505;
+  border: 1px solid #111;
+  padding: 20px; /* Minimal internal space */
+  border-radius: 12px;
+  display: flex; /* Horizontal alignment inside the box */
+  align-items: flex-start;
+  gap: 15px;
+  transition: 0.3s ease;
+}
+
+.git-card:hover {
+  border-color: #00b4d8;
+  background: #080808;
+}
+
+.git-icon {
+  font-size: 1.2rem; /* Small icons */
+  margin-top: 2px;
+}
+
+.git-card-info {
+  text-align: left;
+}
+
+.git-label {
+  color: #00b4d8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.git-value {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #bbbbbb;
+  word-break: break-word;
+}
+
+/* --- Minimal Footer --- */
+.git-footer-brand {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #111;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* Mobile: Stack them when screen is too narrow */
+@media (max-width: 900px) {
+  .git-grid {
+    grid-template-columns: 1fr;
+  }
+}

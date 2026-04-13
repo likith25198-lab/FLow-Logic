@@ -1,0 +1,115 @@
+.refs-section {
+  padding: 30px 0;
+  background-color: #03045e; /* Deep dark background */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.refs-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.refs-tag {
+  color: #00b4d8;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.refs-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+/* --- The Animation Logic --- */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(350px * 12 + 40px * 12); /* Width of cards + gaps */
+  animation: scroll 40s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused; /* Pauses on hover for readability */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-350px * 6 - 40px * 6)); }
+}
+
+/* --- Card Design --- */
+.ref-card {
+  width: 350px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.95); /* Light card */
+  margin: 0 20px;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.ref-card:hover {
+  transform: scale(1.05);
+  background: #ffffff;
+}
+
+.ref-quote-mark {
+  font-size: 4rem;
+  color: #00b4d8;
+  font-family: serif;
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.ref-text {
+  color: #1a202c;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ref-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ref-avatar {
+  width: 45px;
+  height: 45px;
+  background: #0077b6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.ref-name {
+  font-size: 1rem;
+  color: #03045e;
+  margin: 0;
+}
+
+.ref-role {
+  font-size: 0.8rem;
+  color: #546e7a;
+  margin: 0;
+}
