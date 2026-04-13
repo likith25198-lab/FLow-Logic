@@ -1,35 +1,37 @@
 import React from 'react';
-
+import './MissionVission.css';
 
 const MissionVision = () => {
   return (
-    <section className="mv-section" id="aboutus">
-      <div className="mv-container">
+    <section className="mv-compact-section">
+      <div className="mv-compact-container">
         
-        {/* Mission Card */}
-        <div className="mv-card mission">
-          <div className="mv-icon-wrapper">
-            <div className="mv-pulse"></div>
-            <span className="mv-icon">🎯</span>
+        {/* The Vision Card */}
+        <div className="mv-compact-card">
+          <div className="mv-scanner-line"></div>
+          <div className="mv-card-content">
+            <div className="mv-top-row">
+              <span className="mv-indicator">Vision 2030</span>
+              <div className="mv-pulse-dot"></div>
+            </div>
+            <p className="mv-summary">
+              Architecting <span className="blue-glow">autonomous water intelligence</span> for zero-waste industrial ecosystems.
+            </p>
           </div>
-          <h2 className="mv-title">Our Mission</h2>
-          <p className="mv-text">
-            To empower industries and communities with <strong>intelligent, eco-conscious</strong> fluid management systems.
-          </p>
-          <div className="mv-glow"></div>
         </div>
 
-        {/* Vision Card */}
-        <div className="mv-card vision">
-          <div className="mv-icon-wrapper">
-            <div className="mv-pulse"></div>
-            <span className="mv-icon">👁️</span>
+        {/* The Mission Card */}
+        <div className="mv-compact-card">
+          <div className="mv-scanner-line delay"></div>
+          <div className="mv-card-content">
+            <div className="mv-top-row">
+              <span className="mv-indicator">Mission</span>
+              <div className="mv-pulse-dot"></div>
+            </div>
+            <p className="mv-summary">
+              Engineering <span className="blue-glow">precision-grade solutions</span> to optimize global industrial water lifecycles.
+            </p>
           </div>
-          <h2 className="mv-title">Our Vision</h2>
-          <p className="mv-text">
-            To be the <strong>industry benchmark</strong> in water and wastewater engineering—driving innovation, reliability, and sustainability.
-          </p>
-          <div className="mv-glow"></div>
         </div>
 
       </div>
