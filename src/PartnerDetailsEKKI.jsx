@@ -18,7 +18,7 @@ const PartnerDetailsEKKI = () => {
     {
       id: "sewage",
       title: "Sewage Submersibles (EKKI HOMA)",
-      image: "/public/E1.png",
+      image: "E1.png",
       products: [
         { name: "LINUS 1028", type: "Compact Sewage", detail: "Compact, easy-to-handle submersible for lighter building applications with oil-filled construction.", specs: ["0.7-0.9 kW", "13m Head", "25 m³/h Max"] },
         { name: "LINUS 1030", type: "Mid-Range Sewage", detail: "Engineered for endurance with dual-coated copper windings and sealed terminal boards.", specs: ["0.7-1.2 kW", "19m Head", "43 m³/h Max"] },
@@ -31,7 +31,7 @@ const PartnerDetailsEKKI = () => {
     {
       id: "borehole",
       title: "Borehole Submersibles",
-      image: "/public/E2.png",
+      image: "E2.png",
       products: [
         { name: "ULAV 4JVR", type: "4\" Vertical", detail: "High-performance vertical borehole extraction with precision-engineered stages.", specs: ["Stainless Steel", "Corrosion Proof"] },
         { name: "4J / 4JO Series", type: "Standard Borehole", detail: "Reliable extraction for deep-well water supply in residential and agricultural sectors.", specs: ["Energy Efficient", "Sand Resistant"] },
@@ -41,7 +41,7 @@ const PartnerDetailsEKKI = () => {
     {
       id: "openwell",
       title: "Open-Well Sump Submersibles",
-      image: "/public/E3.png",
+      image: "E3.png",
       products: [
         { name: "SUBSEVAK", type: "Sump Submersible", detail: "Submersible pump designed for domestic sumps and overhead tank water transfer.", specs: ["Silent", "Easy Install"] },
         { name: "VOK / VOSVR", type: "Vertical Open-well", detail: "Vertical configuration for narrow sumps and pits, featuring energy-efficient motors.", specs: ["Space Saving", "Robust"] },
@@ -51,7 +51,7 @@ const PartnerDetailsEKKI = () => {
     {
       id: "surface",
       title: "Surface & Monoblocs",
-      image: "/public/E4.png",
+      image: "E4.png",
       products: [
         { name: "HOS / HOSVR", type: "Horizontal Monobloc", detail: "Efficient surface water pumping for boosting and general liquid transfer.", specs: ["High Flow", "Reliable"] },
         { name: "IRAI ESK", type: "Compact Monobloc", detail: "Shield bearing and mechanical seals for extended motor life in residential settings.", specs: ["0.5-2.0 HP", "54 m³/hr Max"] },
