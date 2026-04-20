@@ -33,7 +33,7 @@ body {
 /* --- THE NAVBAR BASE --- */
 .navbar {
   width: 100%;
-  height: 80px;
+  height: 97px;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 95%;
 }
 
 .logo-anchor {
@@ -89,7 +89,7 @@ body {
 }
 
 .logo-img {
-  height: 170px;
+  height: 160px;
   width: auto;
   z-index: 2;
   position: relative;
@@ -144,8 +144,8 @@ body {
 .nav-item {
   text-decoration: none;
   color: var(--deep-ocean);
-  font-weight: 600;
-  font-size: 1.15rem; /* Increased from 1rem */
+  font-weight: 700;
+  font-size: 1.30rem; /* Increased from 1rem */
   display: flex;
   flex-direction: column;
   align-items: center;
