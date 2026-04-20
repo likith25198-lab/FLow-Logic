@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="nav-logo-wrapper">
           <a href="/" className="logo-anchor">
             <img 
-              src="Gemini_Generated_Image_hay7yfhay7yfhay7-removebg-preview.png" 
+              src="public/logo.png" 
               alt="Logo" 
               className="logo-img" 
             />
