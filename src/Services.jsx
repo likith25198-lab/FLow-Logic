@@ -77,7 +77,7 @@ const Services = () => {
                 
                 <h3 className="content-title" >{service.title}</h3>
                 <p className="content-desc">{service.desc}</p>
-                <div className="service-badge">Flowlogic Certified</div>
+                
               </div>
             </div>
           ))}
