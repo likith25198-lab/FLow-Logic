@@ -12,10 +12,10 @@ const Consultation = () => {
 
     // Replace the strings below with your actual IDs from EmailJS
     emailjs.sendForm(
-      'service_3ka91zb',
-      'template_b3dqvef', 
+      'service_nuv5kq4',
+      'template_6a3gm4f', 
       form.current, 
-      '7RF-7uGjFDgItNGs7'
+      'ioi67JkkbtWPIziCW'
     )
     .then((result) => {
         setStatus('success');
