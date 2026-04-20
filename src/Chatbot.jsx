@@ -47,7 +47,7 @@ const Chatbot = () => {
   };
 
   const sendFinalEmail = (finalData) => {
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', finalData, 'YOUR_PUBLIC_KEY')
+    emailjs.send('service_nuv5kq4', 'template_6a3gm4f', finalData, 'ioi67JkkbtWPIziCW')
       .then(() => console.log('Chatbot mail sent!'))
       .catch((err) => console.error('Chatbot error:', err));
   };
