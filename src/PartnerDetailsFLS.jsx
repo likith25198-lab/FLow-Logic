@@ -18,7 +18,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "ball-valves",
       title: "Ball Valves",
-      image: "/public/F1.png",
+      image: "F1.png",
       products: [
         { 
           name: "Cast Steel 2-Piece", 
@@ -31,7 +31,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "forged-valves",
       title: "Forged Steel Series",
-      image: "/public/F4.png",
+      image: "F4.png",
       products: [
         { 
           name: "Gate / Globe / Check", 
@@ -44,7 +44,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "cast-valves",
       title: "Cast Industrial Valves",
-      image: "/public/F5.png",
+      image: "F5.png",
       products: [
         { 
           name: "Heavy Duty Gate/Globe", 
@@ -57,7 +57,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "control-valves",
       title: "Balancing & Control",
-      image: "/public/F6.png",
+      image: "F6.png",
       products: [
         { 
           name: "Pressure Independent", 
@@ -70,7 +70,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "butterfly",
       title: "Butterfly Valves",
-      image: "/public/F3.png",
+      image: "F3.png",
       products: [
         { 
           name: "High Performance", 
@@ -83,7 +83,7 @@ const PartnerDetailsFLS = () => {
     {
       id: "specialty",
       title: "Specialty Flow Gear",
-      image: "/public/F2.png",
+      image: "F2.png",
       products: [
         { 
           name: "Strainer & Dual Plate", 
