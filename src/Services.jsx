@@ -33,7 +33,7 @@ const Services = () => {
       id: "05", 
       title: "Sewage & Effluent Treatment", 
       img: "Sew.jpg", 
-      desc: "Using advanced Daiki Axis (Japan) technology, we treat and recycle wastewater, making it safe for reuse or discharge while supporting environmental responsibility." 
+      desc: "Using advanced technology, we treat and recycle wastewater, making it safe for reuse or discharge while supporting environmental responsibility." 
     },
     { 
       id: "06", 
