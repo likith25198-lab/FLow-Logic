@@ -33,7 +33,7 @@ const Hero = () => {
         
 
         <h1 className="hero-title">
-          <SplitText text="Pioneering" className="title-part-1" delay={0.2} />
+          <SplitText text="PIONEERING" className="title-part-1" delay={0.2} />
           <br />
           <SplitText text="Sustainable Water" className="title-part-2"  delay={0.8} />
         </h1>
