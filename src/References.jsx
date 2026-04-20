@@ -3,12 +3,12 @@ import './References.css';
 
 const References = () => {
   const feedback = [
-    { name: "David Chen", role: "Industrial Operations Manager", text: "Flowlogic transformed our water recycling process. Their engineering team is second to none." },
-    { name: "Sarah Jenkins", role: "Sustainability Director", text: "The most reliable eco-conscious fluid systems we've integrated into our plants to date." },
-    { name: "Marcus Thorne", role: "Chief Engineer", text: "Professional, innovative, and deeply committed to water security. A benchmark in the industry." },
-    { name: "Elena Rodriguez", role: "Municipal Lead", text: "Their holistic approach saved us 30% in distribution costs while improving water quality." },
-    { name: "James Wilson", role: "Project Consultant", text: "Cutting-edge technology combined with reliable engineering. Flowlogic is the future." },
-    { name: "Dr. Linda Wu", role: "Environmental Researcher", text: "Finally, a company that balances industrial power with true environmental stewardship." }
+    { name: "Ramesh", role: "Industrial Operations Manager", text: "Flowlogic experts helped us to optimize selection and saved on project cost." },
+    { name: "Kumar", role: "Senior Associate", text: "Their innovative solution and commitment to excellence ensure a project is delivered with highest standards of quality." },
+    { name: "ChandraMouli", role: "Project Head", text: "From problem solving to execution their services consistently drive progress and reliability." },
+    { name: "Gowrish", role: "Director", text: "Their expert teams transform complex challenges into practical solutions which is truly commandable." },
+    { name: "Dayanda", role: "Project Consultant", text: "One stop for all your water challenges, offering end-to-end solution under one roof." }
+    
   ];
 
   // We double the array to create the infinite loop effect
