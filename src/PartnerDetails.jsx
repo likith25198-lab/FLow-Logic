@@ -18,7 +18,7 @@ const PartnerDetails = () => {
     {
       id: "cartridges",
       title: "Cartridge Systems",
-      image: "images.jpeg",
+      image: "/images.jpeg",
       products: [
         { name: "RO Protect", type: "Melt Blown", detail: "Thermally moulded layers for absolute depth filtration.", specs: ["FDA Compliant", "99% Eff."] },
         { name: "Clarypleat", type: "Pleated PP", detail: "Max surface area for high-purity water.", specs: ["Low ΔP", "High Capacity"] },
@@ -28,7 +28,7 @@ const PartnerDetails = () => {
     {
       id: "highflow",
       title: "High Flow & Sintered",
-      image: "G1.png",
+      image: "/G1.png",
       products: [
         { name: "RO Protect HF", type: "6\" High Flow", detail: "Handles up to 114 m³/hr. 50% smaller footprint.", specs: ["Inside-Out", "Ergonomic"] },
         { name: "Sintered SS", type: "316L Metal", detail: "Cleanable media for steam and high-viscosity polymers.", specs: ["Reusable", "Heat Resistant"] }
@@ -37,7 +37,7 @@ const PartnerDetails = () => {
     {
       id: "housings",
       title: "Engineering Vessels",
-      image: "G2.png",
+      image: "/G2.png",
       products: [
         { name: "ClarySEA", type: "FRP Housing", detail: "Exceptional resistance for seawater desalination.", specs: ["ASME Section-X", "Zero Bypass"] },
         { name: "Polyfilt", type: "uPVC Series", detail: "UV-stabilized, corrosion-proof alternative to SS.", specs: ["6 Bar Rated", "Economical"] }
