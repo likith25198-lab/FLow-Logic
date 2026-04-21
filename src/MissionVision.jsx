@@ -11,7 +11,7 @@ const MissionVision = () => {
           <div className="mv-scanner-line"></div>
           <div className="mv-card-content">
             <div className="mv-top-row">
-              <span className="mv-indicator">Vision 2030</span>
+              <span className="mv-indicator">Vision</span>
               <div className="mv-pulse-dot"></div>
             </div>
             <p className="mv-summary">
