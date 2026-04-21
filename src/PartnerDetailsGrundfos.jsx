@@ -18,26 +18,26 @@ const PartnerDetailsGrundfos = () => {
     {
       section: "Pressure Boosting Systems",
       products: [
-        { name: "Hydro Multi-E", type: "Master Redundancy", detail: "Distributed control where every pump acts as a master. IE5 high-efficiency motors.", img: "/public/GF1.png", specs: ["IE5 Motor", "App Control"] },
-        { name: "Hydro MPC", type: "Advanced Control", detail: "CU 352 controller manages up to 6 pumps for maximum energy optimization.", img: "/public/GF2.png", specs: ["6 Pump Max", "IE3/IE5"] },
-        { name: "Hydro Multi-B", type: "CR/CM Range", detail: "Constant pressure system with external VFD for high-demand residential use.", img: "/public/GF3.png", specs: ["PN10/16", "VFD Control"] },
-        { name: "Hydro Multi-S", type: "Cascade Control", detail: "Simple, reliable automatic cascade control for apartment buildings.", img: "/public/GG1.png", specs: ["Up to 103m", "2-3 Pumps"] }
+        { name: "Hydro Multi-E", type: "Master Redundancy", detail: "Distributed control where every pump acts as a master. IE5 high-efficiency motors.", img: "/GF1.png", specs: ["IE5 Motor", "App Control"] },
+        { name: "Hydro MPC", type: "Advanced Control", detail: "CU 352 controller manages up to 6 pumps for maximum energy optimization.", img: "/GF2.png", specs: ["6 Pump Max", "IE3/IE5"] },
+        { name: "Hydro Multi-B", type: "CR/CM Range", detail: "Constant pressure system with external VFD for high-demand residential use.", img: "/GF3.png", specs: ["PN10/16", "VFD Control"] },
+        { name: "Hydro Multi-S", type: "Cascade Control", detail: "Simple, reliable automatic cascade control for apartment buildings.", img: "/GG1.png", specs: ["Up to 103m", "2-3 Pumps"] }
       ]
     },
     {
       section: "Individual Pump Units",
       products: [
-        { name: "CRE Series", type: "E-Pump", detail: "Variable speed pump with integrated frequency converter for plug-and-pump constant pressure.", img: "/public/GF4.png", specs: ["SOLO Mode", "0.37-22kW"] },
-        { name: "CR/CRI/CRN", type: "Vertical Multistage", detail: "The industry standard for reliability. Features LiqTec dry-run protection.", img: "/public/GF5.png", specs: ["35 Bar Max", "Cartridge Seal"] }
+        { name: "CRE Series", type: "E-Pump", detail: "Variable speed pump with integrated frequency converter for plug-and-pump constant pressure.", img: "/GF4.png", specs: ["SOLO Mode", "0.37-22kW"] },
+        { name: "CR/CRI/CRN", type: "Vertical Multistage", detail: "The industry standard for reliability. Features LiqTec dry-run protection.", img: "/GF5.png", specs: ["35 Bar Max", "Cartridge Seal"] }
       ]
     },
     {
       section: "Wastewater & Drainage",
       products: [
-        { name: "SEG Grinder", type: "Sewage Pump", detail: "Patented grinder system to prevent clogging in small-bore pressure pipes.", img: "/public/GF6.png", specs: ["High Head", "Cast Iron"] },
-        { name: "DPK / DPK.V", type: "Submersible", detail: "Heavy-duty drainage and vortex sewage pumps for flood and basement pits.", img: "/public/GF7.png", specs: ["Vortex Impeller", "Thermal Protection"] },
-        { name: "DWK Series", type: "Dewatering", detail: "Contractor-grade dewatering pumps for construction and emergency flood removal.", img: "/public/GF8.png", specs: ["Portable", "90m+ Head"] },
-        { name: "UNILIFT AP", type: "Utility Pump", detail: "Stainless steel residential drainage for pools, gardens, and light greywater.", img: "/public/GF9.png", specs: ["304/316 SS", "Float Switch"] }
+        { name: "SEG Grinder", type: "Sewage Pump", detail: "Patented grinder system to prevent clogging in small-bore pressure pipes.", img: "/GF6.png", specs: ["High Head", "Cast Iron"] },
+        { name: "DPK / DPK.V", type: "Submersible", detail: "Heavy-duty drainage and vortex sewage pumps for flood and basement pits.", img: "/GF7.png", specs: ["Vortex Impeller", "Thermal Protection"] },
+        { name: "DWK Series", type: "Dewatering", detail: "Contractor-grade dewatering pumps for construction and emergency flood removal.", img: "/GF8.png", specs: ["Portable", "90m+ Head"] },
+        { name: "UNILIFT AP", type: "Utility Pump", detail: "Stainless steel residential drainage for pools, gardens, and light greywater.", img: "/GF9.png", specs: ["304/316 SS", "Float Switch"] }
       ]
     }
   ];
