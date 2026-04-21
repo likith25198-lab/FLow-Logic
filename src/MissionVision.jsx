@@ -29,7 +29,7 @@ const MissionVision = () => {
               <div className="mv-pulse-dot"></div>
             </div>
             <p className="mv-summary">
-              To<span className="blue-glow">empower</span> industries and communities with intelligent, eco-conscious fluid management systems.
+              To<span className="blue-glow"> empower</span> industries and communities with intelligent, eco-conscious fluid management systems.
             </p>
           </div>
         </div>
