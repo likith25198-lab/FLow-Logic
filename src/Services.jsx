@@ -15,7 +15,7 @@ const Services = () => {
       id: "02", 
       title: "Energy-Efficient Hot Water", 
       img: "hot.jpg", 
-      desc: "In partnership with Energen, we provide smart hybrid systems that reduce energy usage while ensuring a steady, reliable hot water supply—saving costs without compromising comfort." 
+      desc: "We provide smart hybrid systems that reduce energy usage while ensuring a steady, reliable hot water supply—saving costs without compromising comfort." 
     },
     { 
       id: "03", 
