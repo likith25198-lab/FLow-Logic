@@ -15,6 +15,7 @@ import Chatbot from './Chatbot.jsx';
 import PartnerDetails from './PartnerDetails'; 
 import PartnerDetailsEKKI from './PartnerDetailsEKKI';
 import PartnerDetailsFLS from './PartnerDetailsFLS';
+import PartnerDetailsGrundfos from './PartnerDetailsGrundfos';
 
 // Styles
 import './App.css';
@@ -44,6 +45,7 @@ function App() {
           <Route path="/partner/gopani" element={<PartnerDetails />} />
           <Route path="/partner/ekki" element={<PartnerDetailsEKKI />} />
           <Route path="/partner/fls" element={<PartnerDetailsFLS />} />
+          <Route path="/partner/grundfos" element={<PartnerDetailsGrundfos />} />
           
           {/* Catch-all for 404s */}
           <Route path="*" element={
