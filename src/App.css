@@ -678,3 +678,357 @@ button:hover {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* --- Desktop vs Mobile Button Logic --- */
+
+/* Hide the mobile-specific list item by default */
+.mobile-only-btn {
+  display: none;
+}
+
+/* On Desktop (Screens larger than 992px) */
+@media (min-width: 993px) {
+  .desktop-only {
+    display: flex;
+  }
+  .mobile-menu-toggle {
+    display: none;
+  }
+}
+
+/* On Mobile (Screens 992px and smaller) */
+@media (max-width: 992px) {
+  .desktop-only {
+    display: none !important; /* Removes the second button from the top right */
+  }
+
+  .mobile-only-btn {
+    display: block; /* Shows the button inside the slide-out menu */
+    margin-top: 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    z-index: 2001; /* Ensure it stays above the drawer */
+  }
+
+  /* Ensure the drawer is visible when 'show' class is added */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden off-screen */
+    width: 70%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    right: 0; /* Slides into view */
+  }
+}
+/* --- HAMBURGER VISIBILITY FIX --- */
+
+/* 1. Hide the button on Desktop */
+.mobile-toggle-wrapper {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  /* 2. Force visibility on Mobile */
+  .mobile-toggle-wrapper {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999; /* Higher than everything else */
+    padding: 10px;
+  }
+
+  .hamburger-btn {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hamburger-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #00b4d8; /* Your electric blue color */
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 3. X Animation when Open */
+  .hamburger-btn.is-active span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  .hamburger-btn.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.is-active span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
+  /* 4. The Menu Drawer Fix */
+  .nav-links {
+    display: flex !important; /* Force flex */
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9998;
+  }
+
+  .nav-links.open {
+    right: 0 !important; /* Slide into view */
+  }
+
+  /* 5. Clean up buttons */
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only-btn {
+    display: block !important;
+    margin-top: 30px;
+  }
+}
+/* --- MOBILE RESPONSIVENESS --- */
+
+/* Hamburger Menu Icon */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2001;
+  padding: 10px;
+}
+
+.mobile-menu-toggle .bar {
+  width: 28px;
+  height: 3px;
+  background-color: var(--electric-blue);
+  transition: var(--transition-smooth);
+  border-radius: 2px;
+}
+
+/* Hamburger to X Animation */
+.bar.active:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.bar.active:nth-child(2) { opacity: 0; }
+.bar.active:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+@media (max-width: 992px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hidden by default */
+    width: 80%;
+    height: 100vh;
+    background: var(--white-glass);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-smooth);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    gap: 30px;
+  }
+
+  .nav-links.show {
+    right: 0; /* Slide in */
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  /* Hero Section Mobile Scaling */
+  .hero-title {
+    font-size: 2.8rem !important; /* Smaller text for mobile */
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .split-char {
+    display: inline-block; /* Ensure animations still work on mobile */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem !important;
+  }
+  
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .logo-img {
+    height: 35px; /* Smaller logo for small screens */
+  }
+}
+/* --- MOBILE NAVIGATION REPAIR --- */
+
+/* Hide by default on desktop */
+.nav-hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 9999;
+  padding: 10px;
+}
+
+.hamburger-lines {
+  height: 20px;
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: #00b4d8; /* Force your Electric Blue color */
+  transition: transform 0.4s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .nav-hamburger {
+    display: block !important; /* Force visibility */
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Hamburger to X Animation */
+  .nav-hamburger.active .line1 { transform: rotate(45deg) translate(5px, 5px); }
+  .nav-hamburger.active .line2 { opacity: 0; }
+  .nav-hamburger.active .line3 { transform: rotate(-45deg) translate(7px, -8px); }
+
+  /* Drawer Setup */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white; /* Solid background to ensure visibility */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 9998;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .mobile-only-item {
+    display: block !important;
+    margin-top: 20px;
+  }
+}
+/* --- Desktop vs Mobile Visibility Logic --- */
+
+/* 1. By default, hide the mobile contact link */
+.mobile-contact-wrapper {
+  display: none !important;
+}
+
+/* 2. Style for larger screens (Laptops/Desktops) */
+@media (min-width: 993px) {
+  .nav-hamburger {
+    display: none !important; /* Hide hamburger on laptop */
+  }
+  
+  .desktop-contact-only {
+    display: flex !important; /* Show top-right button on laptop */
+  }
+
+  .nav-links {
+    display: flex !important;
+    position: static !important;
+    background: transparent !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+/* 3. Style for smaller screens (Mobile/Tablets) */
+@media (max-width: 992px) {
+  .desktop-contact-only {
+    display: none !important; /* Hides the top-right button so it doesn't double up */
+  }
+
+  .mobile-contact-wrapper {
+    display: block !important; /* Shows the button inside the slide-out menu */
+    margin-top: 20px;
+  }
+
+  .nav-hamburger {
+    display: block !important; /* Shows hamburger */
+  }
+
+  .nav-links {
+    /* ... existing drawer styles ... */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+}
