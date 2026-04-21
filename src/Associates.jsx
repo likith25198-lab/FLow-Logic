@@ -4,10 +4,10 @@ import './Associates.css';
 
 const Associates = () => {
   const associates = [
-    { id: 1, logo: "public/L2.png", name: "Gopani", path: "/partner/gopani" },
-    { id: 4, logo: "public/L5.png", name: "Grundfos", path: "/partner/grundfos" },
+    { id: 1, logo: "/L2.png", name: "Gopani", path: "/partner/gopani" },
+    { id: 4, logo: "/L5.png", name: "Grundfos", path: "/partner/grundfos" },
     // { id: 2, logo: "public/L3.png", name: "EKKI", path: "/partner/ekki" },
-    { id: 3, logo: "public/L1.png", name: "FLS Valves", path: "/partner/fls" }
+    { id: 3, logo: "/L1.png", name: "FLS Valves", path: "/partner/fls" }
     
   ];
 
