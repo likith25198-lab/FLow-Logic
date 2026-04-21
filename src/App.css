@@ -1032,3 +1032,70 @@ button:hover {
     right: 0;
   }
 }
+
+/* ============================================================
+   MOBILE & LAPTOP SYNC (Add to the bottom of App.css)
+   ============================================================ */
+
+/* 1. GLOBAL SWITCHES */
+.mobile-contact-wrapper {
+  display: none !important; /* Hide inside-menu button on laptops */
+}
+
+/* 2. LAPTOP / DESKTOP SETTINGS (993px and up) */
+@media (min-width: 993px) {
+  .nav-hamburger {
+    display: none !important; 
+  }
+  .desktop-contact-only {
+    display: flex !important; /* Show top-right button */
+  }
+}
+
+/* 3. MOBILE & TABLET SETTINGS (992px and below) */
+@media (max-width: 992px) {
+  /* Fix the double button issue */
+  .desktop-contact-only {
+    display: none !important; 
+  }
+  .mobile-contact-wrapper {
+    display: block !important; 
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  /* INCREASE LOGO SIZE FOR MOBILE */
+  .logo-img {
+    height: 100px !important; /* Adjust this number to make it bigger/smaller */
+    width: auto;
+  }
+
+  .nav-logo-wrapper {
+    padding: 10px 0;
+  }
+
+  /* Ensure the Hamburger is visible */
+  .nav-hamburger {
+    display: block !important;
+  }
+
+  /* The Slide-out Menu */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.5s ease-in-out;
+    z-index: 9998;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+}
