@@ -111,3 +111,37 @@
     max-width: 300px;
   }
 }
+/* 1. Ensure the container clips the zoomed image */
+.brand-card-inner {
+  /* ... keep your existing properties (clip-path, background, etc.) ... */
+  overflow: hidden; 
+  position: relative;
+}
+
+/* 2. Add transition to the logo */
+.brand-logo-img {
+  width: 80%;
+  max-height: 80px;
+  object-fit: contain;
+  /* Ensure the zoom is smooth (0.4s matches your other animations) */
+  transition: transform 0.4s ease, filter 0.4s ease; 
+  filter: grayscale(100%); /* Optional: starts grayscale */
+  opacity: 0.7;
+}
+
+/* 3. The Zoom Effect on Hover */
+.brand-card:hover .brand-logo-img {
+  transform: scale(1.15); /* Zooms in by 15% */
+  filter: grayscale(0%);  /* Optional: brings back color on hover */
+  opacity: 1;
+}
+
+/* 4. Optional: Add a slight lift to the whole card */
+.brand-card {
+  /* ... existing properties ... */
+  transition: transform 0.4s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px); /* Lifts the card slightly */
+}
