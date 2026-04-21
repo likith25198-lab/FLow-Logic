@@ -15,7 +15,7 @@ const MissionVision = () => {
               <div className="mv-pulse-dot"></div>
             </div>
             <p className="mv-summary">
-              Architecting <span className="blue-glow">autonomous water intelligence</span> for zero-waste industrial ecosystems.
+             To be the <span className="blue-glow">industry benchmark </span> in water and wastewater engineering, driving innovation, reliability, and sustainability.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const MissionVision = () => {
               <div className="mv-pulse-dot"></div>
             </div>
             <p className="mv-summary">
-              Engineering <span className="blue-glow">precision-grade solutions</span> to optimize global industrial water lifecycles.
+              To<span className="blue-glow">empower</span> industries and communities with intelligent, eco-conscious fluid management systems.
             </p>
           </div>
         </div>
