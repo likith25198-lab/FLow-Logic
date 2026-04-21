@@ -28,7 +28,7 @@ const Hero = () => {
             <SplitText text="PIONEERING" className="title-part-1" delay={0.2} />
           </div>
           <div className="title-wrapper">
-            <SplitText text="Sustainable Water" className="title-part-2" delay={0.8} />
+            <SplitText text="Sustainable <br> Water" className="title-part-2" delay={0.8} />
           </div>
         </h1>
 
