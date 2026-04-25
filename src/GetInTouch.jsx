@@ -23,7 +23,7 @@ const GetInTouch = () => {
             <span className="git-icon">📞</span>
             <div className="git-card-info">
               <span className="git-label">Phone</span>
-              <a href="tel:+919148983776" className="git-value">+91-91489 83776</a>
+              <a href="tel:+919148983776" className="git-value">+91-9108279529</a>
             </div>
           </div>
 
