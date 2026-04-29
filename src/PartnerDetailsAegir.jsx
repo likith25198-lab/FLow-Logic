@@ -22,14 +22,14 @@ const PartnerDetailsAegir = () => {
           name: "Smart Water Meters", 
           type: "Ultrasonic IoT", 
           detail: "Ultrasonic IoT Smart Water Meters with cloud integration and online analytics. Patented technology — ultrasonic meters with no reflectors.", 
-          img: "/public/A1.png", 
+          img: "/A1.png", 
           specs: ["Highly Accurate", "ISO 4064:2014", "Leakage Alerts", "Cloud Based", "No Pressure Drop", "Doesn't Measure Air"] 
         },
         { 
           name: "Retrofit Boards", 
           type: "Infrastructure Conversion", 
           detail: "Convert your legacy infrastructure of Pulse Count or RS485 Modbus Meters into LoRa/WiFi/GSM Smart Meters with our retrofit communication hats.", 
-          img: "/public/A2.png", 
+          img: "/A2.png", 
           specs: ["Pulse or RS485 Input", "BMS/BIM Integration", "GSM/WiFi Out Option", "Cloud Based", "Mobile & Web App", "Remote Reading"] 
         }
       ]
@@ -41,14 +41,14 @@ const PartnerDetailsAegir = () => {
           name: "Modbus Gateway", 
           type: "4-Channel / 60 Nodes", 
           detail: "4-Channel Modbus Gateway with 60 nodes connectivity and GSM/WiFi uplink. Monitor and control each channel remotely. OTA available.", 
-          img: "/public/A3.png", 
+          img: "/A3.png", 
           specs: ["LoRa or RS485 Nodes", "GSM/WiFi Uplink", "Integrate BMS/BIM", "Health Monitoring", "Energy Reporting", "OTA Capable"] 
         },
         { 
           name: "LoRa Gateway", 
           type: "India Band / 100 Nodes", 
           detail: "India band LoRa gateway with 100 nodes connectivity and GSM/WiFi uplink. Telemetry on each node strength available.", 
-          img: "/public/A4.png", 
+          img: "/A4.png", 
           specs: ["LoRa or RS485 Nodes", "GSM/WiFi Uplink", "Integrate BMS/BIM", "Health Monitoring", "Energy Reporting", "OTA Capable"] 
         }
       ]
@@ -60,14 +60,14 @@ const PartnerDetailsAegir = () => {
           name: "Level Monitor", 
           type: "Solar Powered Lidar", 
           detail: "Solar powered lidar based liquid level controllers. Paired with a smart plug for completely wireless automation of sump and OHT water levels. Remotely monitor and control the pump.", 
-          img: "/public/A5.png", 
+          img: "/A5.png", 
           specs: ["Solar & Wireless", "Auto Level Control", "Water Usage Report", "Dry Run Protection", "Drop-and-Forget", "Highly Accurate"] 
         },
         { 
           name: "Motor Control", 
           type: "Smart Switch", 
           detail: "Smart switch to accept commands from a level monitor or mobile app, to pair with the level monitor. Offers dry run protection and energy measurement.", 
-          img: "/public/A6.png", 
+          img: "/A6.png", 
           specs: ["Dry Run Protection", "Energy Measurement", "App Integration", "Pump Pairing"] 
         }
       ]
@@ -79,7 +79,7 @@ const PartnerDetailsAegir = () => {
           name: "Rain Gauge", 
           type: "IoT Solar-Powered", 
           detail: "Auto-drain, solar-powered, IoT rain gauge. Place at any location, pair with a WiFi or put a SIM card — that's all you need for hourly rain reporting.", 
-          img: "/public/A7.png", 
+          img: "/A7.png", 
           specs: ["Auto-Drain", "Solar-Powered", "Hourly Reporting", "SIM/WiFi Support"] 
         }
       ]
