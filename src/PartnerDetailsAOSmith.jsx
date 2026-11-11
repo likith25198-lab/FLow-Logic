@@ -22,7 +22,7 @@ const PartnerDetailsAOSmith = () => {
           name: "HPW 80",
           type: "Wall-Mounted | 80 L",
           detail: "A wall-mounted heat pump water heater that absorbs heat from surroundings to produce hot water with minimal energy. Features AES (Adaptive Energy-Saving System), two backup heating elements for quick recovery, and a patented glass-lined protective tank for longer life.",
-          img: "/public/AS1.png",
+          img: "/AS1.png",
           specs: ["80 L Tank", "210 W Input", "55°C Heat Pump", "Glass-Lined Tank", "Remote Control", "45 kg"]
         }
       ]
@@ -34,14 +34,14 @@ const PartnerDetailsAOSmith = () => {
           name: "HPI 40",
           type: "Integrated | 150 L",
           detail: "An integrated heat pump water heater (heat pump and tank in one unit) for service areas or balconies. AES and interactive remote control cut water heating cost by up to 75%. A MAX function provides more hot water output.",
-          img: "/public/AS2.png",
+          img: "/AS2.png",
           specs: ["150 L Tank", "460 W Input", "55°C Heat Pump", "75% Cost Saving", "MAX Function", "87 kg"]
         },
         {
           name: "HPI 50",
           type: "Integrated | 180 L",
           detail: "The larger model of the HPI series — an integrated heat pump water heater for service areas or balconies, with AES, interactive remote control, and a claimed 75% reduction in water heating cost. MAX function gives more hot water output.",
-          img: "/public/AS3.png",
+          img: "/AS3.png",
           specs: ["180 L Tank", "460 W Input", "55°C Heat Pump", "75% Cost Saving", "Glass-Lined Tank", "92 kg"]
         }
       ]
@@ -53,14 +53,14 @@ const PartnerDetailsAOSmith = () => {
           name: "HPA 80",
           type: "Split Type | 300 L",
           detail: "A split-type air-to-water heat pump with a dedicated outdoor unit for terraces, balconies, or service areas. High COP ratings of 3.6 and 4.2 ensure maximum energy efficiency. Features AES, time setting, and remote control.",
-          img: "/public/AS4.png",
+          img: "/AS4.png",
           specs: ["300 L Tank", "1010 W Input", "65°C Heat Pump", "Split Design", "High COP", "98 kg + 37 kg"]
         },
         {
           name: "HPA 120",
           type: "Split Type | 450 L",
           detail: "The larger model of the HPA split series with a dedicated outdoor unit. Quoted COPs are 3.6 and 4.2 for outstanding energy savings. Patented glass-lined protective tank and high efficiency insulation ensure durability and performance.",
-          img: "/public/AS5.png",
+          img: "/AS5.png",
           specs: ["450 L Tank", "1380 W Input", "65°C Heat Pump", "Split Design", "High COP", "133 kg + 55 kg"]
         }
       ]
@@ -72,21 +72,21 @@ const PartnerDetailsAOSmith = () => {
           name: "CAHP 80-06",
           type: "Commercial Integrated | 455 L",
           detail: "Designed for a premium bathing experience. A unique heat exchanger reaches 65°C in heat pump mode with 6 kW electrical heating capacity. Automatic intelligent defrost prevents freezing in extreme cold conditions. R134a green refrigerant.",
-          img: "/public/AS6.png",
+          img: "/AS6.png",
           specs: ["455 L Tank", "65°C Heat Pump", "6 kW Backup", "R134a Refrigerant", "Auto Defrost", "229 kg"]
         },
         {
           name: "CAHP 120-06",
           type: "Commercial Integrated | 455 L",
           detail: "Same robust design as the CAHP 80-06 — premium bathing experience, 65°C in heat pump mode, 6 kW electrical heating capacity, and automatic defrost for cold conditions. The most popular commercial heat pump model.",
-          img: "/public/AS7.png",
+          img: "/AS7.png",
           specs: ["455 L Tank", "65°C Heat Pump", "6 kW Backup", "LCD Display", "Auto Defrost", "229 kg"]
         },
         {
           name: "CAHP 3HP",
           type: "Dual Fan Commercial | 455 L",
           detail: "The dual fan version of the CAHP series. Reaches 65°C in heat pump mode with 12 kW electrical heating capacity — double the single-fan models. Automatic intelligent defrost handles freezing in extreme cold. Built for high-demand commercial applications.",
-          img: "/public/AS8.png",
+          img: "/AS8.png",
           specs: ["455 L Tank", "65°C Heat Pump", "12 kW Backup", "Dual Fan", "Auto Defrost", "229 kg"]
         }
       ]
