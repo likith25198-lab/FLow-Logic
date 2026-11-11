@@ -18,6 +18,7 @@ import PartnerDetailsFLS from './PartnerDetailsFLS';
 import PartnerDetailsGrundfos from './PartnerDetailsGrundfos';
 import PartnerDetailsNeer from './PartnerDetailsNeer.jsx';
 import PartnerDetailsAegir from './PartnerDetailsAegir.jsx';
+import PartnerDetailsAOSmith from './PartnerDetailsAOSmith.jsx';
 
 // Styles
 import './App.css';
@@ -50,6 +51,7 @@ function App() {
           <Route path="/partner/grundfos" element={<PartnerDetailsGrundfos />} />
           <Route path="/partner/neerdrains" element={<PartnerDetailsNeer />} />
           <Route path="/partner/aegir" element={<PartnerDetailsAegir />} />
+          <Route path="/partner/aosmith" element={<PartnerDetailsAOSmith />} />
           
           {/* Catch-all for 404s */}
           <Route path="*" element={
