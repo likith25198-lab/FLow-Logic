@@ -10,7 +10,8 @@ const Associates = () => {
     // { id: 2, logo: "public/L3.png", name: "EKKI", path: "/partner/ekki" },
     { id: 3, logo: "/L1.png", name: "FLS Valves", path: "/partner/fls" },
      { id: 5, logo: "/Neer.png", name: "Neer Drains", path: "/partner/neerdrains" },
-    { id: 6, logo: "/Aegir.png", name: "Aegir", path: "/partner/aegir" }
+    { id: 6, logo: "/Aegir.png", name: "Aegir", path: "/partner/aegir" },
+    { id: 7, logo: "/AS.png", name: "A.O. Smith", path: "/partner/aosmith" }
     
   ];
 
